@@ -3,7 +3,7 @@ function init() {
     var data = {
         list: [{
                 text: '常用 Hot',
-                icon: 'glyphicon-screenshot',
+                icon: 'glyphicon-star',
                 links: [{
                         text: 'Google',
                         href: 'http://google.hw798.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjQ3v6T1NjfAhVRJDQIHbbjA0wQPAgH',
@@ -71,7 +71,7 @@ function init() {
                     },
                     {
                         text: '教程网站',
-                        icon: 'glyphicon-map-marker',
+                        icon: 'glyphicon-education',
                         sub_links: [{
                                 text: '慕课网',
                                 href: 'https://www.imooc.com/',
@@ -208,7 +208,7 @@ function init() {
             ,
             {
                 text: '设计 Design',
-                icon: 'glyphicon-map-marker',
+                icon: 'glyphicon-picture',
                 links: [{
                         text: '创造师导航',
                         href: 'http://chuangzaoshi.com/',
