@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WWF</title>
+    <link href="assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site-left">
+        <div class="site-logo">
+            <img src="assets/images/logo.png"><br>
+            WWF_HelloWorld
+        </div>
+        <ul class="nav nav-first-level" id="nav">
+            <li v-for="item in list">
+                <a href="#">
+                    <i class="glyphicon" v-bind:class="item.icon"></i><br>
+                    {{item.text}}
+                </a>
+                <ul class="nav nav-second-level">
+                    <li v-for="sub_item in item.sub_list">
+                        <a href="#">
+                        <i class="glyphicon" v-bind:class="sub_item.icon"></i>&nbsp;&nbsp;
+                        {{sub_item.text}}
+                      </a>
+                    </li>
+                </ul>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="site-right">
+        <div class="site-search">
+            <form action="https://www.baidu.com/baidu" method="get" target="_blank">
+                <input type="search" name="word" id="word" tabindex="1">
+                <input type="submit" name="submit" id="submit" value="百度一下">
+            </form>
+        </div>
+        <div class="site-content">
+            <!-- 第一级content -->
+            <ul class="content-first-level" id="content">
+                <li v-for="item in list">
+                    <!-- 一级菜单对应内容 -->
+                    <div class="cont-1-lev-straight">
+                        <div class="card">
+                            <div class="card-title">
+                                <i class="glyphicon" v-bind:class="item.icon"></i>&nbsp;
+                                {{item.text}}
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3" v-for="link in item.links">
+                                      <a v-bind:href="link.href" class="item" target="_blank" v-bind:title="link.description">
+                                        <span class="item-icon"><img v-bind:src="link.img"></span>
+                                        <span class="item-title">{{link.text}}</span>
+                                        <div class="item-description">{{link.description}}</div>
+                                      </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 二级菜单对应内容 -->
+                    <ul class="content-second-level">
+                        <li v-for="sub_item in item.sub_list">
+                            <div class="card">
+                                <div class="card-title">
+                                    <i class="glyphicon" v-bind:class="sub_item.icon"></i>&nbsp;
+                                    {{sub_item.text}}
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3" v-for="link in sub_item.sub_links">
+                                          <a v-bind:href="link.href" class="item" target="_blank" v-bind:title="link.description">
+                                            <span class="item-icon"><img v-bind:src="link.img"></span>
+                                            <span class="item-title">{{link.text}}</span>
+                                            <div class="item-description">{{link.description}}</div>
+                                          </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
