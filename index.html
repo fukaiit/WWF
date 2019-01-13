@@ -57,7 +57,7 @@
                                     <div class="col-md-3" v-for="link in item.links">
                                       <a v-bind:href="link.href" class="item" target="_blank" v-bind:title="link.description">
                                         <span class="item-icon"><img v-bind:src="link.img"></span>
-                                        <span class="item-title">{{link.text}}</span>
+                                        <div class="item-title">{{link.text}}</div>
                                         <div class="item-description">{{link.description}}</div>
                                       </a>
                                     </div>
@@ -78,7 +78,7 @@
                                         <div class="col-md-3" v-for="link in sub_item.sub_links">
                                           <a v-bind:href="link.href" class="item" target="_blank" v-bind:title="link.description">
                                             <span class="item-icon"><img v-bind:src="link.img"></span>
-                                            <span class="item-title">{{link.text}}</span>
+                                            <div class="item-title">{{link.text}}</div>
                                             <div class="item-description">{{link.description}}</div>
                                           </a>
                                         </div>

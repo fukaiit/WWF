@@ -141,7 +141,10 @@ a.item .item-title{
 	line-height: 24px;
 	font-weight: 700;
     font-size: 16px;
-    margin-left: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 26px;
 }
 a.item .item-description{
 	color: #666666;
