@@ -18,7 +18,7 @@ function init() {
                     {
                         text: 'SPRING INITIALIZR',
                         href: 'https://start.spring.io/',
-                        img: 'https://start.spring.io/img/favicon.png',
+                        img: 'https://start.spring.io/img/favicon.ico',
                         description: 'bootstrap your application now'
                     }
                 ],
