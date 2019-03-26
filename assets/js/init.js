@@ -18,7 +18,7 @@ function init() {
                     {
                         text: 'SPRING INITIALIZR',
                         href: 'https://start.spring.io/',
-                        img: 'https://start.spring.io/img/favicon.png',
+                        img: 'https://start.spring.io/public/favicon.ico',
                         description: 'bootstrap your application now'
                     }
                 ],
@@ -95,6 +95,12 @@ function init() {
                                 href: 'http://oeasy.org/',
                                 img: 'http://oeasy.org/favicon.ico',
                                 description: '会玩才会学'
+                            },
+                            {
+                                text: '牛客网',
+                                href: 'https://www.nowcoder.com/',
+                                img: 'assets/images/logos/niuke.png',
+                                description: '互联网求职神器'
                             }
                         ]
                     }
