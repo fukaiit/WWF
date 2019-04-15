@@ -12,7 +12,7 @@ function init() {
                     }, {
                         text: 'Maven Repository',
                         href: 'https://mvnrepository.com/',
-                        img: 'https://mvnrepository.com/assets/images/7080b8b0f6f48e6fbaffd5f9d85fcc7f-favicon.ico',
+                        img: 'assets/images/logos/maven.ico',
                         description: 'maven仓库'
                     },
                     {
@@ -24,7 +24,7 @@ function init() {
                 ],
                 sub_list: [{
                         text: '前端开发',
-                        icon: 'glyphicon-screenshot',
+                        icon: 'glyphicon-picture',
                         sub_links: [{
                                 text: 'Bootstrap V3',
                                 href: 'https://v3.bootcss.com/css/',
@@ -66,6 +66,29 @@ function init() {
                                 href: 'https://fontawesome.com/icons?d=gallery&s=brands,regular,solid&m=free',
                                 img: 'https://fontawesome.com/images/favicons/apple-icon-57x57.png',
                                 description: '已设定选择条件，选择fa for AdminLTE'
+                            }
+                        ]
+                    },
+                    {
+                        text: '后端开发',
+                        icon: 'glyphicon-random',
+                        sub_links: [{
+                                text: 'FreeMarker',
+                                href: 'http://freemarker.foofun.cn/',
+                                img: 'http://freemarker.foofun.cn/favicon.png',
+                                description: 'FreeMarker 中文官方参考手册'
+                            },
+                            {
+                                text: 'mybatis',
+                                href: 'http://www.mybatis.org/mybatis-3/zh/index.html',
+                                img: 'assets/images/logos/mybatis.png',
+                                description: 'mybatis 官方文档'
+                            },
+                            {
+                                text: 'Activiti',
+                                href: 'http://www.mossle.com/docs/activiti/index.html',
+                                img: 'assets/images/logos/activiti.png',
+                                description: 'Activiti 5.16 用户手册'
                             }
                         ]
                     },
